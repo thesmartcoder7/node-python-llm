@@ -11,3 +11,12 @@
 
 1. ollama. This is used for downloading other models locally.
 2. Langchain. This is used for linking the prompts and the model for the purposes of context.
+
+## Individualize Instruction
+
+1. [Node-Service](./node_service/README.md)
+1. [Python-Service](./python_service/README.md)
+
+## Usage
+
+Simply just run `docker-compose up build`. This command will build the images if needed and start all the services defined in the docker-compose.yml file. Make sure you have docker installed.
