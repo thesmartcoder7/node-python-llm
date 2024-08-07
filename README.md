@@ -19,4 +19,16 @@
 
 ## Usage
 
-Simply just run `docker-compose up build`. This command will build the images if needed and start all the services defined in the docker-compose.yml file. Make sure you have docker installed.
+Simply just run:
+
+```bash
+docker-compose up --build
+```
+
+and in case you need permissions, just run:
+
+```bash
+sudo docker-compose up --build
+```
+
+This command will build the images if needed and start all the services defined in the docker-compose.yml file. Make sure you have docker installed.
