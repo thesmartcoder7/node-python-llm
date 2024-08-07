@@ -1,0 +1,19 @@
+version: "3"
+services:
+  python_service:
+    build:
+      context: ./python_service
+      dockerfile: Dockerfile
+    container_name: python_service
+    ports:
+      - "5000:5000"
+
+  node_service:
+    build:
+      context: ./node_service
+      dockerfile: Dockerfile
+    container_name: node_service
+    ports:
+      - "3000:3000"
+    depends_on:
+      - python_service
